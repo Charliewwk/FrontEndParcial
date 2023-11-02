@@ -1,0 +1,30 @@
+.margenSup {
+  margin-top: 100px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.form input,
+.form button {
+  margin-bottom: 10px;
+  padding: 8px;
+}
+
+.footerOk {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cardRepuestos {
+  width: 450px;
+}
+
+.formGroup {
+  margin-bottom: 15px;
+}
