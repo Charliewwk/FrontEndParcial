@@ -43,7 +43,7 @@ const Body = () => {
 
   return (
     <div className="margenSup container d-flex justify-content-center">
-      <Card className="cardRepuestos">
+      <Card className="cardRepuestos shadow">
         <Card.Header>Generador de Etiquetas QR para Repuestos</Card.Header>
         <Card.Body>
           <Form onSubmit={handleSubmit}>
