@@ -15,16 +15,26 @@
   padding: 8px;
 }
 
-.footerOk {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
 .cardRepuestos {
   width: 450px;
 }
 
 .formGroup {
   margin-bottom: 15px;
+}
+
+.footerOk {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.leftContent {
+  flex: 1; /* Ocupa todo el espacio disponible */
+  width: 50%;
+  text-align: left; /* Alinea el contenido a la izquierda */
+}
+
+.rightContent {
+  text-align: right; /* Alinea el contenido a la derecha */
 }

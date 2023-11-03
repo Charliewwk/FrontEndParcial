@@ -24,7 +24,7 @@ const Body = () => {
 
   const [back, setBack] = useState("#FFFFFF");
   const [fore, setFore] = useState("#000000");
-  const [size, setSize] = useState(100);
+  const [size, setSize] = useState(180);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -88,14 +88,18 @@ const Body = () => {
               {error && <CardError error={error} />}
               {formData.partNumber && formData.description && !error && (
                 <div className="footerOk">
-                  <CardOk {...formData} />
-                  <QRCode
-                    title="Número de Parte"
-                    value={formData.partNumber}
-                    bgColor={back}
-                    fgColor={fore}
-                    size={size === "" ? 0 : size}
-                  />
+                  <div className="leftContent">
+                    <CardOk {...formData} />
+                  </div>
+                  <div className="rightContent">
+                    <QRCode
+                      title="Número de Parte"
+                      value={formData.partNumber}
+                      bgColor={back}
+                      fgColor={fore}
+                      size={size === "" ? 0 : size}
+                    />
+                  </div>
                 </div>
               )}
             </>
